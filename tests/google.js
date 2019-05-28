@@ -10,6 +10,7 @@ module.exports = {
             .setQuery(mainQuery)
             .selectFilter('@languageDropdown', 'lang_no')
             .selectFilter('@lastUpdateDropdown', 'm')
+            // .perform( () => { debugger; })
             .search();
 
         browser
