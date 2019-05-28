@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nightwatch",
     "debug": "node --inspect-brk node_modules/.bin/nightwatch",
+    "test": "nightwatch",
+    "test:browserstack": "nightwatch -c nightwatch.browserstack.conf.js",
     "test:cucumber": "cucumber-js --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty"
   },
   "keywords": [],
@@ -18,6 +19,7 @@
   "dependencies": {
     "cucumber": "^5.1.0",
     "cucumber-pretty": "^1.5.0",
+    "dotenv": "^8.0.0",
     "nightwatch-api": "^2.3.0"
   }
 }
