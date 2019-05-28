@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nightwatch"
+    "test": "nightwatch",
+    "test:cucumber": "cucumber-js --require cucumber.conf.js --require step-definitions --format node_modules/cucumber-pretty"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,10 @@
   "devDependencies": {
     "chromedriver": "^74.0.0",
     "nightwatch": "^1.1.10"
+  },
+  "dependencies": {
+    "cucumber": "^5.1.0",
+    "cucumber-pretty": "^1.5.0",
+    "nightwatch-api": "^2.3.0"
   }
 }
